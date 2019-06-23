@@ -21,7 +21,7 @@
       height: 250px;
     }
     .item-h1{
-      border: 1px solid #white;
+      border: 1px solid white;
     }
 
   </style>
@@ -428,13 +428,79 @@
     <br><br>
 
     Flexbox:<br>
-    <div class="row-h1 text-white">
-      <div class="item-h1">Flex Item</div>
-      <div class="item-h1">Flex Item</div>
-      <div class="item-h1">Flex Item</div>
+    <div class="row-h1 text-white d-flex flex-row align-item-center">
+      <div class="p-4 item-h1">Flex Item</div>
+      <div class="p-4 item-h1">Flex Item</div>
+      <div class="p-4 item-h1">Flex Item</div>
     </div>
+    <br><br>
 
+    Carousel Slider:<br>
+    <div id="slider1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#slider1" data-slider-to="0"></li>
+        <li data-target="#slider1" data-slider-to="1"></li>
+        <li data-target="#slider1" data-slider-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Screenshot_20.png" alt="slider">
+          <div class="carousel-caption">
+            <h4>lol</h4>
+            <p>If you want to learn about Twitter Bootstrap then this tutorial for you. In this tutorial, I will cover the Twitter Bootstrap framework and build so many awesome projects. Hope you will like it.</p>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="img/Screenshot_18.png" alt="slider">
+          <div class="carousel-caption">
+            <h4>lol</h4>
+            <p>If you want to learn about Twitter Bootstrap then this tutorial for you. In this tutorial, I will cover the Twitter Bootstrap framework and build so many awesome projects. Hope you will like it.</p>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="img/Screenshot_25.png" alt="slider">
+          <div class="carousel-caption">
+            <h4>lol</h4>
+            <p>If you want to learn about Twitter Bootstrap then this tutorial for you. In this tutorial, I will cover the Twitter Bootstrap framework and build so many awesome projects. Hope you will like it.</p>
+          </div>
+        </div>
 
+        <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slider1" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+    <br><br> 
+
+    Collapse: <br>
+    <button class="btn btn-primary" data-target="#collapse-1" data-toggle="collapse">lol</button>
+    <div id="collapse-1">
+      <div class="card">
+        <div class="card-body">
+          If you want to learn about Twitter Bootstrap then this tutorial for you. In this tutorial, I will cover the Twitter Bootstrap framework and build so many awesome projects. Hope you will like it.
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+  Accourdion:<br>
+  <div id="#accourdion" role="tablist">
+    <div class="card">
+      <div class="card-hearder" role="tab">
+        <h5>
+          <a data-toggle="collapse" href="#section-1">Section 1</a>
+        </h5>
+      </div>
+      <div class="collapse" id="section-1" data-parent="#accourdion">
+        <div class="card-body">
+          If you want to learn about Twitter Bootstrap then this tutorial for you. In this tutorial, I will cover the Twitter Bootstrap framework and build so many awesome projects. Hope you will like it.
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -449,5 +515,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
+  <script type="text/javascript">
+    $('.carousel').carousel({
+      intervel: 1000,
+      wrap: ,
+    });
+  </script>
   </body>
 </html>
